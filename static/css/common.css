@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Header */
+
+.header {
+    background-color:rgb(12, 12, 12); 
+    
+    font-size: 13px;
+
+}
+.FP{
+    margin-left:10px;
+
+
+}
+.header .navbar .navbar-brand img {
+    height: 40px;
+    margin-left: 10px;
+
+    
+}
+ul{
+    position: absolute;
+    right: 20px;
+}
+.gender-inff{
+    background: transparent;
+    border: 0px;
+}
+
+.gender-infm{
+    background: transparent;
+    border: 0px;
+    margin-left: 20px;
+}
+
+.header .navbar .nav-item i {
+    position: relative;
+    bottom:50%;
+    right: 50%;
+    
+    margin-right: 8px;
+    height: 10%;
+    color: #fa0015;
+   
+}
+
+.header .nav-vl {
+    position: relative;
+    right:8%;
+    
+    height: 24px;   
+    margin: auto 16px;
+    display: block;
+    border: 1px solid rgb(241, 3, 3);
+    
+}
+#user{
+    position: absolute;
+    top: 25%;
+    right:95%;
+}
+#user2{
+    position: absolute;
+    top: 25%;
+    right: 30%;
+}
+@media(max-width:768px) {
+    .header .nav-vl {
+        display: none;
+        
+    }
+}
+
+.header .nav-name {
+    font-weight: bold;
+    margin: auto 16px;
+   
+   
+}
+
+@media(max-width:768px) {
+    .header .nav-name {
+        margin: 8px 0px
+      
+    }
+}
+
+
+/* Footer */
+.footer{
+    font-size: 100px;
+    position: relative;
+    background-color: #333333;
+    font-size: 13px;
+    height: 10%;
+    width: 100%;   
+}
+#Footer_content{
+    font-size: 20px;
+    position: relative;
+    top:20%;
+    left:45%;
+    color: #f1d6d6;
+    height: 10%;
+    width: 50%;
+       
+
+}

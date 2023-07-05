@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Segmentation Result</title>
+    <!-- <style>
+        input[type=file],
+        input[type=submit] {
+          background-color: #62529c;
+          border: none;
+          color: #fff;
+          /* padding: 15px 30px; */
+          text-decoration: none;
+          /* margin: 4px 2px; */
+          /* cursor: pointer; */
+        }
+      </style> -->
+</head>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input  style="border: 1px solid red;"type="file" name="image">
+    <input  type="submit" value="Segment">
+</form>
+<div style='position: absolute; bottom: 10%; border: 1px solid black;'>
+    {% if image2 %}
+    <h2>Segmented Image:</h2>
+    <img src="{{ output_image.url }}" alt="Segmented Image">
+{% endif %}
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,348 @@
+<html lang="en">
+        <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Welcome</title>
+        <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">        
+        <link rel="stylesheet" href="/static/css/common.css">
+        <link rel="stylesheet" href="/static/css/index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+       
+    </head>
+    <body>
+
+       <!-- Stickey-Top -->
+
+        <div class="header sticky-top">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="Index.html">
+                    <img class="FP" src="/static/img/revolve.gif" />
+                    
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- <div class="collapse navbar-collapse justify-content-end" id="my-navbar"> -->
+                    <ul class="navbar-nav">
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#signup-modal">
+                                <i  id = "user"class="fas fa-user "></i><h6 class="In_Nav" style ="color: red;" >Signup</h6>
+                            </a>
+                        </li>
+                        <div class="nav-vl"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#login-modal">
+                                <i id = "user2"class="fas fa-sign-in-alt"></i><h6 class="In_Nav" style ="color: red;" >Login</h6>
+                            </a>
+                        </li>
+                        
+                   
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="dashboard.php">
+                                <i class="fas fa-user"></i>Dashboard
+                            </a>
+                        </li>
+                        <div class="nav-vl"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="logout.php">
+                                <i class="fas fa-sign-out-alt"></i>Logout
+                            </a>
+                        </li> -->
+                    
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Signup Modal -->
+        <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="SignupModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="SignupModal">Signup</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="signup-form" class="form" role="form" method="post" autocomplete="off" action="api/signup_submit.php">
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="full_name" autocomplete="off" placeholder="Full Name" maxlength="30" required>
+                            </div>
+                            <br>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="phone" autocomplete="off" placeholder="Phone Number" maxlength="10" minlength="10" required>
+                            </div>
+                            <br>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email" required>
+                            </div>
+                            <br>
+                            <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </div>
+                                <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password" minlength="6" required>
+                            </div>
+                            <br>
+                            <!-- <div class="input-group form-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-university"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" name="college_name" placeholder="College Name" maxlength="150" required>
+                            </div>
+                            <br> -->
+                            <div class="form-group">
+                                <span style="margin-left: 20px;">I'm a</span>
+                                <input style="margin-left: 20px;"type="radio" class="ml-3" id="gender-male"  name="gender" value="male" /> Male
+                                <label class="gender-infm"  for="gender-male">
+                                </label>
+                                <input  type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
+                                <label class="gender-inff" for="gender-female">
+                                    Female
+                                </label>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <button type="submit" id="CreAc" class="btn btn-block btn-primary">Create Account</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <span>Already have an account?
+                            <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#login-modal">Login</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="LoginModal" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="LoginModal">Login</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+
+                <div class="modal-body">
+                    <form id="login-form" class="form" role="form" method="post" action="api/login_submit.php">
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" name="email" autocomplete="off" placeholder="Email" required>
+                        </div>
+                        <br>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control" name="password" autocomplete="off" placeholder="Password" minlength="6" required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <button type="submit" id="Log" class="btn btn-block btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+                
+                
+                <div class="modal-footer">
+                    <span>
+                        <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signup-modal">Click here</a>
+                        to register a new account
+                    </span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Div1 -->
+        <div id="div1">
+            <img style="width:100%; height: 100%" src="/static/img/bgs.jpg">
+            <div id="in_div1_01">
+                <img class="FP FP1" style="height: 120%;"src="/static/img/moon.png" />
+            </div>
+            <div id="in_div1_02">
+               <p style="color: #ffffff;" >The Moon</p>
+                <p id="mini" style="color: #ffffff;">Earth's only natural satellite</p>
+            </div>
+        </div>
+
+        <!-- Div2 -->
+        <div id="div2">
+            <div id="in_div2_03">
+                <div id = carry>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="/static/img/rock3.jpg"  style="height: 100%;"class="d-block w-100" alt="...">
+                            
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                            <img src="/static/img/rocket2.png"  style="height: 100%;"  class="d-block w-100" alt="...">
+                                 
+                            </div>
+                            <div class="carousel-item">
+                            <img src="/static/img/Pragyaan.jpg" style="height: 100%;" class="d-block w-100" alt="...">
+                            
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="in_div2_03">
+                <div id = carry>
+                    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="/static/img/sd.jpg" style="height: 100%;"class="d-block w-100" alt="...">
+                            
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                            <img src="/static/img/Lunar.jpg" style="height: 100%;" class="d-block w-100" alt="...">
+                                 
+                            </div>
+                            <div class="carousel-item">
+                            <img src="/static/img/sdd.jpg" style="height: 100%;" class="d-block w-100" alt="...">
+                            
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Div3 -->
+
+        <div id="div3">
+            <div id="in_div3_01">
+                <p id="Semantic1" style="color: #ffffff;">Semantic Segmentation</p>
+                <p id="Semantic2" style="color: #ffffff;">Semantic segmentation (SS) is the task of classifying every pixel in an image with a class from a known set of labels.</p>
+            </div>
+            <div id="in_div3_01">
+                <img id="segment" src="/static/img/semantic-segmentation-1.jpg"  />
+            </div>
+        </div>
+        <div class="search">
+            
+            <div class="Choose">
+                <div id="Ch_Img">
+                    <img id="IMG2" src="/static/img/f.png">
+                    
+                </div>
+                <div id="ele" >
+                    <img id="exe"src="/static/img/rvx.gif" >
+                    </div>
+                <div id="BT">
+                    
+                <!-- <button type="button" class="btn btn-outline-dark">Choose File</button>
+                <button type="button" class="btn btn-outline-dark">Segment</button> -->
+                <form method="post" id="form_down" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <label id="fileSelect" for="file-upload" > Choose File
+                        
+                          
+                    <input id ="file-upload" type="file" name="image">
+                  <script>
+                        // $("#file-upload").change(function(){
+                        //         $("#file-name").text(this.files[0].name);
+                        //     }) 
+                                document.getElementById("file-upload").onchange = function() {
+                                    // document.querySelector("#fileSelect").textContent = this.files[0].name;
+                                    alert("File is selected !!");
+                                };    
+                        </script>
+                    </label>
+                    
+                    <input type="submit" value="Segment">
+                    
+                </form>
+                
+                </div>
+               
+                
+            </div>
+
+        </div>
+
+        
+
+
+        <!-- Footer -->
+        <div class= "footer">
+
+            <div id="Footer_content">
+               PROUDLY BY SHRIRANG KANADE
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="/static/js/jquery.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>   
+    </body>
+</html>

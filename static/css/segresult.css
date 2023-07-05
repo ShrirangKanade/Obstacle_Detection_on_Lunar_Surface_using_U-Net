@@ -1,0 +1,102 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+        /* background: #ff00cc; 
+        background: -webkit-linear-gradient(to right, #333399, #ff00cc); 
+        background: linear-gradient(to right, #333399, #ff00cc); 
+    
+        background: #667db6;  
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); 
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); */
+
+    background: #DC2424;
+    background: -webkit-linear-gradient(to right, #4A569D, #DC2424);  
+    background: linear-gradient(to right, #4A569D, #DC2424);
+
+}
+h1{
+    color: white;   
+    padding: 15px 31%;
+ 
+}
+#h{ 
+    /* border: 1px solid red; */
+    width: 100%;
+    height:100%;    
+}
+#Main{
+    /* border: 1px solid red; */
+    position: absolute;
+    display: flex;
+    height: 80%;
+    width: 80%;
+    top:15%;    
+    left:10%;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.res_img{ 
+    margin-top: 6%;
+    height: 65%;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.res_img:focus,.res_img:hover{
+    transform: scale(1.05,1.05)
+}
+.state{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    height: 20%;
+    bottom: 1%;
+    width: 100%;
+}
+
+.statements{
+    height: 100%;
+    width: 40%;
+    font-size: medium;
+    
+}
+#Main2{  
+    position: absolute;
+    display: flex;
+    height: 75%;
+    width: 50%;
+    top:100%;    
+    left:25%;
+    justify-content: space-evenly;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.res_img2{ 
+    margin-top: 8%;
+    height: 68%;
+    width: 65%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.res_img2:focus,.res_img2:hover{
+    transform: scale(1.05,1.05)
+}
+.statements_2 {
+    position: absolute;
+    bottom: 5%;
+    /* border: 1px solid red; */
+    height: 60%;
+    width: 80%;
+    font-size: medium;
+    
+}
+#linkx{
+    position: absolute; 
+    left:45%;
+    bottom: -100%;
+    height: 10%;
+    width: 50%;
+}

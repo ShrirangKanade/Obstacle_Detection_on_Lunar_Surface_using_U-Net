@@ -1,0 +1,209 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Modals */
+
+.form-control{
+    height: 30px;
+}
+.input-group .input-group-text i {
+    width: 14px;
+}
+
+input[type="radio"] {
+    position: relative;
+    top: 1px;
+}
+
+#login-modal .modal-dialog {
+    width: 350px;
+    margin: auto;
+}
+.modal-footer {
+    background-color: #f4f4f4;
+    justify-content: center;
+}
+
+/*Login and signup Buttons in Modal*/
+#CreAc{
+    width: 100%;
+}
+
+#Log{
+    width: 100%;
+}
+
+/*Header*/
+.top{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 10%;
+    display: flex;
+    height:15%;
+    /* border: red solid 1px; */
+}
+
+.Img{
+    /* border : 1px solid red; */
+    position: relative;
+    top: 20%;
+    left: 37%;
+    height : 50%;
+    width : 5%;
+}
+
+#Image{
+    /* border : 1px solid red; */
+    height: 100%;
+    width: 100%;
+}
+.txt{
+    /* border : 1px solid red; */
+    font-size: 200%; 
+    position: relative;
+    top: 20%;
+    left:39%;
+    color: black;
+    /* border : 1px solid red; */
+    height : 50%;
+    width : 20%;
+}
+.txt2{
+    font-size: 150%; 
+    position: relative;
+    color: black;
+    top: 90%;
+    left:13%;
+    /* border : 1px solid red; */
+    height : 50%;
+    width : 26%;
+}
+
+#back{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+.text1{
+    color: rgb(251, 255, 0);
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: bold;
+    height: 50%;
+    /* border : 1px solid yellow; */
+}
+#carry{
+    position: relative;
+    border-bottom : 1px solid red;
+    height:80%;
+    width : 100%;
+
+}
+
+.satellite{
+    position: relative;
+  height:50%;
+  width:100%;
+  /* border : 1px solid yellow; */
+  
+}
+
+#sat{
+    /* border : 1px solid yellow; */
+    position: absolute;
+    height:80%;
+    width:20%;
+    right:5%;
+    bottom: 5%;
+}
+#sat1{
+    /* border : 1px solid yellow; */
+    position: absolute;
+    height:100%;
+    width:20%;
+    left: 5%;
+    
+}
+#text2{
+    color: rgb(240, 87, 87);
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    position: absolute; 
+    font-size: 40px;
+    height: 92px;
+    
+    top:35%;
+    left: 7%;
+}
+#MOON{
+    /* border : 1px solid yellow; */
+    position: absolute;
+    height:70%;
+    width:40%;
+    right: 5%; 
+    bottom: 10%;
+}
+/*Upload section*/
+.search{
+    /* border: 1px red solid; */
+    /* background-color: #af65d1; */
+    height: 95%;
+    width: 100%;
+    position: relative;
+}
+.Choose{
+    background-color: rgba(63, 63, 63, 0.884);
+    position: relative;
+    height:50%;
+    width:70%;
+    border-radius: 5%;
+    top:  30%;
+    left: 15%;
+    /* border: 4px dashed orange; */
+
+}
+#rov{
+    width: 100%;
+    height: 100%;
+    
+}
+#Ch_Img{
+    display: flex;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 25%;
+    left:45%;
+    height:30%;
+    width:10%;
+
+    
+}
+#IMG2{
+    
+    height: 100%;
+}
+#ele{
+    
+    position:relative;
+    /* border : 1px solid yellow; */
+    bottom: 10%;
+}
+#exe{
+    position:relative;
+    width: 20%;
+    height: 70%;
+    
+}
+#BT{
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 25%;
+    top:40%;
+    left:37%;
+}
+

@@ -1,0 +1,88 @@
+
+<!--
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Segmentation</title>
+</head>
+<body>
+    <h1>Image Segmentation</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="image">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+```html
+ segmentation_result.html 
+
+ 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Segmentation Result</title>
+</head>
+<body>
+    <h1>Image Segmentation Result</h1>
+    {% load static %}
+    <img src="{% static output_image %}" alt="Segmented Image">
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/static/css/segresult.css">    
+    <title>Image Segmentation Result</title>
+    
+     
+</head>
+<body>
+    <div id="h">
+        <h1>Image Segmentation Result</h1>
+    </div>
+    <div id="Main">
+        <div class="res_img"><img src={{uploaded_img}} style='width: 100%; height: 100%;'></div>
+        <div class="res_img">
+        <img style='width: 100%; height: 100%;'src={{output}}>
+        </div>
+        <div class="state">
+            <div class="statements"><h2 style="padding: 7% 25%;">Input Image</h2></div>
+            <div class="statements"><h2 style="padding: 7% 18%;">Segmented Image</h2></div>
+        </div>
+    </div>
+    
+   
+    <div id="Main2">
+        <!-- <div class="res_img"><img src={{uploaded_img}} style='width: 100%; height: 100%;'></div> -->
+        <div class="res_img2">
+        <img style='width: 100%; height: 100%;'src={{mix}}>
+        </div>
+        <div class="state">
+            <div class="statements_2"><h2 style="padding: 0% 27%;">Optimal Result</h2></div>
+        </div>
+    </div>
+
+     <div id="linkx">
+        
+        <a href="{% url 'segment_image' %}"><button type="button" class="btn btn-outline-dark">Try Again</button></a>
+        
+    </div>
+    
+        <script type="text/javascript" src="/static/js/jquery.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>  
+</body>
+</html>
+
+
+
+
+
