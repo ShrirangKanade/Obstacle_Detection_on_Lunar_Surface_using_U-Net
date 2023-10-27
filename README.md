@@ -7,17 +7,17 @@ This repository represents a web app with a multi-class classification ML model 
 
 
 
-## Description
+## 📄Description
 * This project is developed to solve the problem of detecting obstacles (eg. rocks) on lunar surface.
 
 * Implementation is based on the [U-Net architecture](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/u-net-architecture.png) which creates a segmented image from raw image as an input.
 
-## Dataset 
+## 📁Dataset 
 
 * [Artificial Lunar landscape dataset](https://www.kaggle.com/datasets/romainpessia/artificial-lunar-rocky-landscape-dataset) from Kaggle.
 
 
-## Installation
+## 🛠Installation
 
 ### Requirements
 - Python                    3.10.9 
@@ -28,24 +28,56 @@ This repository represents a web app with a multi-class classification ML model 
 - cudatoolkit               11.6.0              
 
 Rest of the packages are listed in lunar packages list.txt file.
-## Download the Obstacle Detection Model
-- Download the " final_model.pth " file from following Drive [Link](https://drive.google.com/file/d/1mA-7xuitp9fRAYh9E-xW15jgXGg73VF8/view?usp=sharing).
+## 👁Download the Obstacle Detection Model
+- Download the " final_model.pth " file from following Drive [Link](https://drive.google.com/file/d/1WrvycZnVWwltSa6cjeTznEFOyNAwHEZu/view?usp=sharing).
 - Download the file and add its path in views.py file in load_checkpoint() function.
 
 
-## Deployment
+## 🖥Deployment
+- Install the dependencies locally.
 
-To deploy this project open /lunarApp
-/views.py  and run
+- To deploy this project open /lunarApp/views.py  and run :
 
 ```bash
   python manage.py runserver
 ```
 
-It will launch the webapp, then follow below steps :
+- It will launch the webapp, then follow below steps :
 ```bash
   1. Click on Choose File.
   2. Upload any file from Input samples eg PCAM1.png and click on segment.
-  3. The results are displayed on new webpage.
+  3. The results are displayed on new webpage.🎉🎊
 ```
+
+## 🧠Hyperparameters
+
+| Hyperparameters             | Values                                                              |
+| ----------------- | ------------------------------------------------------------------ |
+| Epoch  | 30  |
+| Batch Size | 16|
+| Learning Rate | 0.0001|
+| Optimizer | Adam |
+| Scheduler | ReduceLROnPlateau |
+| Accuracy | IoU|
+| Loss Function | Cross Entropy Loss|
+
+
+
+
+
+
+
+
+
+
+
+## 📄Published Papers
+- [Paper 1](https://ijrpr.com/uploads/V3ISSUE12/IJRPR8857.pdf)
+- [Paper 2](https://ijrpr.com/uploads/V4ISSUE5/IJRPR12979.pdf)
+
+
+
+## 😇Feedback
+
+If you have any feedback, please reach out to us at coder.shrirang.kanade@gmail.com
 
