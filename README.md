@@ -29,7 +29,7 @@ This repository represents a web app with a multi-class classification ML model 
 
 Rest of the packages are listed in lunar packages list.txt file.
 ## Download the Obstacle Detection Model
-- Download the " final_model.pth " file from following Drive [Link](https://drive.google.com/file/d/1WrvycZnVWwltSa6cjeTznEFOyNAwHEZu/view?usp=sharing).
+- Download the " final_model.pth " file from following Drive [Link](https://drive.google.com/file/d/1mA-7xuitp9fRAYh9E-xW15jgXGg73VF8/view?usp=sharing).
 - Download the file and add its path in views.py file in load_checkpoint() function.
 
 
