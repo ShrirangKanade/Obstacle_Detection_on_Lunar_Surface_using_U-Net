@@ -43,11 +43,11 @@ Rest of the packages are listed in lunar packages list.txt file.
 ```
 
 - It will launch the webapp, then follow below steps :
-```bash
+
   1. Click on Choose File.
   2. Upload any file from Input samples eg PCAM1.png and click on segment.
   3. The results are displayed on new webpage.🎉🎊
-```
+
 
 ## 🧠Hyperparameters
 
